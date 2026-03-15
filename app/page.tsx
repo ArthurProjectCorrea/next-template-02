@@ -4,6 +4,7 @@ import { LogIn, UserPlus, ShieldCheck } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { getProjectVersion } from '@/lib/version';
 import { Badge } from '@/components/ui/badge';
+import { TestBackendAuth } from '@/components/test-backend-auth';
 
 export default async function Home() {
   const supabase = await createClient();
@@ -69,6 +70,7 @@ export default async function Home() {
             </>
           )}
         </div>
+        <TestBackendAuth />
       </main>
     </div>
   );

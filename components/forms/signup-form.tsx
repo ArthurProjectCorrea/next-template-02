@@ -62,7 +62,7 @@ export function SignupForm({
         );
         router.push('/login');
       }
-    } catch (err) {
+    } catch (_err) {
       toast.error('Ocorreu um erro inesperado. Tente novamente.');
     } finally {
       setLoading(false);
